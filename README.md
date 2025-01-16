@@ -12,3 +12,23 @@
 
  ## 3. What is in this repository? 
 
+
+ ## Appendix
+
+ ### A: Components and Tools/Services
+
+ ## Components and Tools/Services
+
+| Component              | Tool/Service                                       |
+|------------------------|---------------------------------------------------|
+| **Audio File Storage** | Amazon S3                                         |
+| **Transcription**      | OpenAI Whisper      |
+| **Text Embedding**     | Sentence Transformers (HuggingFace or ada-002)    |
+| **Vector Database**    | Pinecone                                          |
+| **Question Answering** | HuggingFace Pre-trained Model (e.g., T5, RoBERTa) |
+| **Orchestration**      | LangChain                                         |
+| **Backend**            | FastAPI                                  |
+| **Frontend**           | Vercel                                            |
+| **Cloud Hosting**      | AWS                                |
+
+
