@@ -8,7 +8,7 @@
 
  This image gives an overview of how this project is structures. 
 
- ![System Design Architecture](/Users/bera/Desktop/projects/LLM-Podcast-Transcription/images/system_design.png)
+ ![System Design Architecture](images/system_design.png)
 
  ## 3. What is in this repository? 
 
