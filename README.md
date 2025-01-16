@@ -1,4 +1,4 @@
-# LLM-Podcast-Transcription
+# Whispra
 
 ## 1. Project Brief 
 
