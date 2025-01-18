@@ -12,7 +12,6 @@
 
  ## 3. What is in this repository? 
 
-
  ## Appendix
 
  ### A: Components and Tools/Services
