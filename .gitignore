@@ -1,2 +1,3 @@
 data/audio/*.mp3
 data/audio/*.wav
+data/transcriptions/*.txt
