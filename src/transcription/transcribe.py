@@ -3,12 +3,6 @@ import datetime
 from audio_preprocess import AudioPreprocessor
 import whisper
 
-
-import audio_preprocess
-
-print(dir(audio_preprocess))
-
-
 class AudioTranscriber:
     """
     A class to handle audio preprocessing, transcription, and saving transcription
@@ -75,5 +69,6 @@ class AudioTranscriber:
 
         return output_file
 
-
-
+input_file = "/Users/bera/Desktop/projects/LLM-Podcast-Transcription/data/audio/li_lu.mp3"
+transcriber = AudioTranscriber(model_name="base")
+result = transcriber.process_audio(input_file)
