@@ -69,6 +69,6 @@ class AudioTranscriber:
 
         return output_file
 
-input_file = "/Users/bera/Desktop/projects/LLM-Podcast-Transcription/data/audio/li_lu.mp3"
-transcriber = AudioTranscriber(model_name="base")
-result = transcriber.process_audio(input_file)
+# input_file = "/Users/bera/Desktop/projects/LLM-Podcast-Transcription/data/audio/li_lu.mp3"
+# transcriber = AudioTranscriber(model_name="base")
+# result = transcriber.process_audio(input_file)
