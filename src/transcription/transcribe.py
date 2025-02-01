@@ -1,7 +1,8 @@
 import os
 import datetime
-from audio_preprocess import AudioPreprocessor
+from transcription.audio_preprocess import AudioPreprocessor
 import whisper
+from cloud.s3_handler import S3Handler
 
 class AudioTranscriber:
     """
@@ -12,14 +13,17 @@ class AudioTranscriber:
         self,
         model_name="base",
         output_folder="/Users/bera/Desktop/projects/LLM-Podcast-Transcription/data/transcriptions",
+        s3_bucket="your-s3-bucket"
     ):
         """
         Initializes the AudioTranscriber with a Whisper model and output folder.
         """
         self.model_name = model_name
         self.output_folder = output_folder
+        self.s3_bucket = s3_bucket
         self.model = whisper.load_model(model_name)
         self.preprocessor = AudioPreprocessor(sample_rate=16000)
+        self.s3_hanfdler = S3Handler(s3_bucket)
         self._ensure_output_folder_exists()
 
     def _ensure_output_folder_exists(self):
